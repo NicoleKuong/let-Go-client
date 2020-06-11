@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :house_with_garden: let & GO :house_with_garden:
 
-## Available Scripts
+## What this app is about
 
-In the project directory, you can run:
+:wave:[Check out the deployed version](https://let-and-go.netlify.app/):wave:
 
-### `npm start`
+let & GO promotes sustainability :recycle: and communal sharing :couple: . This application allows users to rent out or lease their stuff to their neighbours and build up neighbourhood bonds. With let & GO, you never need to clutter your house with things you only use once or twice. You can finally meet your neighbours while earning some extra money :moneybag: by sharing your stuff that you haven't use for a while.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [App demo](#App-demo)
+- [Technology used](#technology-used)
+- [Goals for this project](#goals-for-this-project)
+- [User Stories and Wireframe](#user-stories-and-wireframe)
+- [Git workflow](#git-workflow)
+- [Server-repo](#server-repo)
 
-### `npm test`
+## App demo
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![let-go_Screenshot2](https://user-images.githubusercontent.com/48523895/77710430-3ddc1100-6fce-11ea-9dc3-f8462d935d61.png)
+![let-go_Screenshot](https://user-images.githubusercontent.com/48523895/77710385-1f761580-6fce-11ea-9313-3ad89e46bb14.png)
+![let-go_Screenshot3](https://user-images.githubusercontent.com/48523895/77710605-cce92900-6fce-11ea-80b4-62d6073d69d2.png)
+![let-go-gif1](https://github.com/NicoleKuong/let-GO-client/blob/master/src/assets/lego-gif-1.gif)
 
-### `npm run build`
+## Technology used
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:eyes::point_down: **Click links to see samples in this project** :point_down::eyes:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [React](https://github.com/NicoleKuong/let-GO-client/blob/master/src/App.js)
+- [Redux](https://github.com/NicoleKuong/let-GO-client/tree/master/src/actions)
+- [Express](https://github.com/NicoleKuong/let-Go-server/blob/master/index.js)
+  - [REST API](https://github.com/NicoleKuong/let-Go-server/blob/master/item/router.js)
+- [Sequelize](https://github.com/NicoleKuong/let-Go-server/blob/master/user/model.js)
+- [React-Bootstrap](https://github.com/sssgordon/project-outcry-client/blob/master/src/components/DetailsForm/DetailsForm.js)
+- [Geolocation](https://github.com/NicoleKuong/let-GO-client/blob/master/src/components/SignUp/SignUpContainer.js) :star:
+- [React-Dropzone-Uploader](https://github.com/NicoleKuong/let-GO-client/blob/master/src/components/ImageUpload/ImageUploadContainer.js) :star:
+- [React-Leaflet](https://github.com/NicoleKuong/let-GO-client/blob/master/src/components/ItemDetails/ItemDetails.js) :star:
+- [Nodemailer](https://github.com/NicoleKuong/let-Go-server/blob/master/email/router.js) :star:
+- [Stripe](https://github.com/NicoleKuong/let-Go-server/blob/master/payment/router.js) :star:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:star: _New technology learned during this project_
 
-### `npm run eject`
+## Goals for this project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The goal of this project is to build a full-stack app using new technologies (see above) _not taught in the bootcamp_. I learned these new tools by reading documentations and watching tutorial videos.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- practice full-stack development
+- practice learning new technology independently
+- apply what we learned in the bootcamp
+- showcase development approach of using wireframes and user stories
+- practice disciplined [git usage](#git-workflow)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## User Stories and Wireframe
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### User stories for this project:
 
-## Learn More
+- As a user, I would like to sign up and login. I must register before I can make an offer
+- As a user, I am able to create a profile to see my information and history of transactions
+- As a user, I would like to search for items at specific locations
+- As a user, I would like to see a dashboard. In this dashboard, I am able to see other users’ offers
+- As a user, I can click into a post on the dashboard and look at the details of the item
+- As a user, I would like to contact the item owner for meet up arrangements
+- As a user, I would like to make payments online for renting an item
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_This mvp is still a work in progress. Some features still need to be implemented and revised. If you have any suggestions, please let me know [here](https://www.linkedin.com/in/nicole-kuong/)_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Wireframe
 
-### Code Splitting
+[Click here for the wireframes for this project in Mockflow](https://wireframepro.mockflow.com/editor.jsp?editor=off&perm=Owner&projectid=M942ed8396a84abfa15da1942fd72dc921583161154742&publicid=7653f18c4b5246a193328bc3cac7ca79#/page/550f39dc6adb49fc87e2187b51296e30)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Git workflow
 
-### Analyzing the Bundle Size
+In this project I try to use:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Good commit messages
+- Well named branches
+- Pull requests with summaries
 
-### Making a Progressive Web App
+#### 👀👇 Click links to view samples of pull requests 👇👀
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- [feat/payment page](https://github.com/NicoleKuong/let-GO-client/pull/9)
+- [Code Review](https://github.com/NicoleKuong/let-GO-client/pull/8)
 
-### Advanced Configuration
+## Server-repo
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The server side of this project is an Express server connected to a Sequelize database. [Click here for more details](https://github.com/NicoleKuong/let-Go-server)
